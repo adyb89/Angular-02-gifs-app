@@ -6,7 +6,7 @@
     <div class="list-group list-reset">
       <a 
         *ngFor="let query of history"
-        href="#" 
+        (click)="onSelectGif(query)"
         class="list-group-item list-group-item-action"
       >
         {{ query | titlecase }}
